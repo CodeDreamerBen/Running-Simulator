@@ -1,0 +1,93 @@
+body {
+    animation-name: time;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+}
+@keyframes one {
+    49% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    99% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes two {
+    0% {
+        opacity: 0%;
+    }
+    49% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    99% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+@keyframes time {
+    0% {
+        background-color: lightblue;
+    }
+    25% {
+        background-color: orange;
+    }
+    50% {
+        background-color: #5e108d;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: lightblue;
+    }
+}
+.grassOne {
+    animation-name: movingGrassOne;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.grassTwo {
+    animation-name: movingGrassTwo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.grassThree {
+    animation-name: movingGrassThree;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes movingGrassOne {
+    0% {
+        position: absolute;
+        left: -620px;
+    }
+    100% {
+        position: absolute;
+        left: 0px;
+    }
+}
+@keyframes movingGrassTwo {
+    0% {
+        position: absolute;
+        left: 0px;
+    }
+}
+@keyframes movingGrassThree {
+    0% {
+        position: absolute;
+        left: 620px;
+    }
+}
